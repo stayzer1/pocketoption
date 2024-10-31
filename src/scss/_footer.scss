@@ -1,0 +1,192 @@
+footer {
+  --padding-top: 12.2rem;
+  --padding-bottom: 4.8rem;
+  --risk-text-font-size: 1.3rem;
+  --risk-text-offset: 1rem 0 1.4rem;
+  --link-font-size: 1.5rem;
+  --socials-gap: 2rem;
+  --general-offset-top: 7rem;
+  --footer-text-offset-top: 3.4rem;
+  --links-offset: 4.6rem 0 3rem -3rem;
+  --link-item-offset-left: 3rem;
+  position: relative;
+  z-index: 5;
+}
+.footer__wrapper {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+}
+.footer__main--logo,
+.footer__info,
+.footer__warning,
+.footer__copyright {
+  color: #9abacf;
+}
+.footer__warning {
+}
+.footer__warning--title {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.footer__warning-icon {
+  margin-right: 1rem;
+  width: 2.6rem;
+  height: 2.6rem;
+}
+.footer__main--socials-link svg,
+.footer__warning-icon {
+  color: #0099fa;
+}
+.footer__warning--text {
+  margin: var(--risk-text-offset);
+  font-size: var(--risk-text-font-size);
+  line-height: 1.692;
+}
+.footer__warning--link {
+  font-size: var(--link-font-size);
+  transition: all 0.35s;
+  border-bottom: 0.1rem solid;
+  color: inherit;
+}
+.footer__links--link,
+.footer__warning--link {
+  color: #fff;
+  border-bottom-color: #0099fa;
+}
+.footer__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.8rem;
+  margin-top: var(--general-offset-top);
+}
+.footer__main--logo .logo {
+  --width: 22.4rem;
+  width: var(--width);
+  height: auto;
+}
+.footer__main--logo .logo[data-type="affiliate"] .logo__text--mono,
+.footer__main--logo .logo__icon--mono {
+  visibility: visible;
+}
+.footer__main--socials {
+  display: flex;
+  align-items: center;
+  gap: var(--socials-gap);
+}
+.footer__main--socials-link {
+  display: block;
+  transition: 0.5s;
+  svg {
+    width: 3rem;
+    height: 3rem;
+    display: block;
+  }
+}
+.footer__main--socials-link:hover {
+  opacity: 0.5;
+}
+.footer__info {
+  margin-top: var(--footer-text-offset-top);
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+.footer__info > :not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  margin: var(--links-offset);
+}
+.footer__links--link {
+  transition: all 0.35s;
+  border-bottom: 0.1rem solid #0099fa;
+  margin-left: var(--link-item-offset-left);
+  margin-bottom: 1.6rem;
+  font-size: var(--link-font-size);
+}
+.footer__links--link:hover,
+.footer__warning--link:hover {
+  border-color: transparent;
+}
+.footer__copyright {
+  display: flex;
+  align-items: center;
+}
+.footer__icon {
+  width: 4rem;
+  height: 4rem;
+}
+.footer__copyright--text {
+  margin-left: 2rem;
+  font-size: 1.3rem;
+}
+@media (max-width: 1199px) {
+  footer {
+    --padding-top: 9.4rem;
+    --padding-bottom: 5.4rem;
+    --risk-text-offset: 0.6rem 0 1.4rem;
+    --footer-text-offset-top: 5.2rem;
+    --links-offset: 4.2rem 0 3.8rem -2.4rem;
+    --link-item-offset-left: 2.4rem;
+  }
+  .footer__info {
+    margin-top: 5.2rem;
+  }
+  .footer__info p:not(:last-child) {
+    margin-bottom: 1.4rem;
+  }
+  .footer__copyright {
+    margin-top: 5.6rem;
+    margin-bottom: 5.8rem;
+  }
+}
+@media (max-width: 959px) {
+  footer {
+    --risk-text-font-size: 1.2rem;
+    --link-font-size: 1.4rem;
+    --link-item-offset-left: 1.8rem;
+    --padding-top: 10.6rem;
+    --padding-bottom: 4.4rem;
+    --risk-text-offset: 1.6rem 0;
+    --socials-gap: 0.8rem;
+    --general-offset-top: 6.6rem;
+    --footer-text-offset-top: 3rem;
+    --links-offset: 3.8rem 0 2.8rem -1.8rem;
+  }
+  .footer__main--logo .logo {
+    --width: 17.2rem;
+  }
+}
+@media (max-width: 639px) {
+  footer {
+    --padding-top: 9.2rem;
+    --padding-bottom: 3.2rem;
+    --risk-text-offset: 1.6rem 0 1.2rem;
+    --general-offset-top: 5.4rem;
+    --footer-text-offset-top: 4.2rem;
+    --links-offset: 2.2rem 0 2rem -0.6rem;
+    --link-item-offset-left: 0.6rem;
+  }
+  .footer__main {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 479px) {
+  .footer__warning {
+    text-align: center;
+  }
+  .footer__warning--title {
+    justify-content: center;
+  }
+  .footer__warning--text {
+    text-align: left;
+  }
+  .footer__links {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,121 @@
+// Container
+.container {
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 1190px;
+}
+@media (max-width: 1199px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 959px) {
+  .container {
+    max-width: 650px;
+  }
+}
+@media (max-width: 639px) {
+  .container {
+    max-width: 490px;
+  }
+}
+@media (max-width: 479px) {
+  .container {
+    max-width: 330px;
+  }
+}
+// Body Locked
+body {
+  min-width: 32rem;
+  background-color: #001834;
+  color: #1e385b;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.4;
+  &.locked {
+    overflow: hidden;
+  }
+}
+html {
+  font-size: 10px;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-size: 5.5rem;
+  font-weight: 600;
+  line-height: 6.3rem;
+  letter-spacing: 0.01em;
+}
+h2 {
+  font-family: "Montserrat";
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 1.2114;
+}
+:root {
+  --header-offset-top: 6.4rem;
+}
+:root {
+  @media (max-width: 1199px) {
+    --header-offset-top: 7rem;
+  }
+}
+:root {
+  @media (max-width: 959px) {
+    --header-offset-top: 5rem;
+  }
+}
+:root {
+  @media (max-width: 639px) {
+    --header-offset-top: 3.6rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  h1 {
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+  }
+  h2 {
+    font-size: 3.8rem;
+  }
+}
+@media (max-width: 959px) {
+  h1 {
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 639px) {
+  h1 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 479px) {
+  h1 {
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+  }
+  h2 {
+    font-size: 2.6rem;
+  }
+}
+// Animations
+// Fade
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

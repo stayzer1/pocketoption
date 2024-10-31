@@ -1,0 +1,44 @@
+main {
+  position: relative;
+  overflow-x: hidden;
+}
+main::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: calc((100vw - 132.1rem) / 2);
+  z-index: 4;
+  pointer-events: none;
+  width: 132.1rem;
+  height: 100%;
+  background-image: -o-linear-gradient(
+    left,
+    rgba(0, 153, 250, 0.15) 1px,
+    transparent 1px
+  );
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 153, 250, 0.15) 1px,
+    transparent 1px
+  );
+  background-size: 22rem 22rem;
+}
+@media (max-width: 1199px) {
+  main::after {
+    width: 88.1rem;
+    left: calc((100vw - 88.1rem) / 2);
+  }
+}
+@media (max-width: 639px) {
+  main::after {
+    width: 44.1rem;
+    left: calc((100vw - 44.1rem) / 2);
+  }
+}
+@media (max-width: 479px) {
+  main::after {
+    width: 37.1rem;
+    left: calc((100vw - 37.1rem) / 2);
+    background-size: 18rem 18rem;
+  }
+}

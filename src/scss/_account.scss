@@ -1,0 +1,144 @@
+.account {
+  padding-bottom: 6.8rem;
+}
+.account__title {
+  margin-top: 3.8rem;
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+.account__types {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+  margin-top: 3rem;
+}
+.account__types--button {
+  width: 28rem;
+  margin: 0 2rem;
+}
+.account__types--btn {
+  position: relative;
+  z-index: 5;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  padding: 0 3.4rem;
+  border-radius: 1rem;
+  transition: all 0.35s;
+  color: #1e385b;
+  width: 100%;
+  padding: 0;
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.btn-default::before {
+  filter: blur(1.5rem);
+  opacity: 0;
+  background: #0099fa;
+}
+.btn-default::after {
+  z-index: 5;
+  background: #fff;
+}
+.btn-default::after,
+.btn-default::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.35s;
+  border-radius: 1rem;
+  color: #1e385b;
+}
+.btn-primary::before {
+  z-index: 5;
+  background: #0099fa;
+  opacity: 0;
+}
+.btn-primary::after {
+  background: -o-linear-gradient(1.92deg, #0099fa 17.81%, #1a4dde 96.46%);
+  background: linear-gradient(88.08deg, #0099fa 17.81%, #1a4dde 96.46%);
+}
+.btn-primary::after,
+.btn-primary::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+  border-radius: 1rem;
+  color: #fff;
+}
+.btn-default:hover::before {
+  opacity: 1;
+}
+.btn-default {
+  .account__types--btn-text {
+    color: #1e385b;
+  }
+}
+.btn-primary {
+  .account__types--btn-text {
+    color: #fff;
+  }
+}
+.btn-primary:hover .btn__shadow,
+.btn-primary:hover::before {
+  opacity: 1;
+}
+.account__types--btn-text {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+.btn__shadow {
+}
+@media (max-width: 1199px) {
+  .stats {
+    padding-bottom: 7rem;
+  }
+  .account__title {
+    margin-top: 4.4rem;
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 639px) {
+  .stats {
+    padding-bottom: 5rem;
+  }
+  .account__title {
+    margin-top: 4.6rem;
+    font-size: 2.4rem;
+  }
+  .account__types {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.2rem;
+  }
+  .account__types--button {
+    margin: 0 0 2rem;
+  }
+}
+@media (max-width: 479px) {
+  .stats {
+    padding-bottom: 3.8rem;
+  }
+  .account__title {
+    margin-top: 3.8rem;
+  }
+}

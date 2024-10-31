@@ -1,0 +1,121 @@
+.header__logo {
+  svg {
+    --width: 25rem;
+    width: var(--width);
+    height: auto;
+  }
+  color: #fff;
+  cursor: pointer;
+}
+.header__logo .logo[data-type="affiliate"] .logo__text--color,
+.header__logo .logo__icon--color {
+  visibility: visible;
+}
+.logo[data-type="pocket-option"] #pocket-option,
+.logo[data-type="pocket-broker"] #pocket-broker,
+.logo[data-type="po-trade"] #po-trade {
+  visibility: visible;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+}
+.header__inner {
+  padding-top: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // height: 110px;
+}
+.header__logo {
+}
+.logo {
+}
+
+.header__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.languages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.languages__title {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.languages__icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  margin-right: 1rem;
+}
+.languages__text {
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.languages__arrow {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+.header__login {
+  display: flex;
+  align-items: center;
+  height: 4.6rem;
+  margin-left: 1.2rem;
+  border-radius: 1.2rem;
+  color: #fff;
+}
+.header__login--icon {
+  flex-shrink: 0;
+  width: 2.6rem;
+  height: 2.6rem;
+  margin-right: 1rem;
+}
+.header__login--text {
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: inherit;
+  border-bottom: 0.2rem solid #0099fa;
+  transition: 0.5s color;
+}
+.header__login--text:hover {
+  border-color: transparent;
+}
+@media (max-width: 1199px) {
+  .header__inner {
+    padding-top: 6.4rem;
+  }
+}
+@media screen and (max-width: 959px) {
+  .header__login {
+    margin-left: 0.8rem;
+  }
+}
+@media screen and (max-width: 639px) {
+  .header__inner {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .header__logo {
+    svg {
+      --width: 19rem;
+    }
+  }
+}
+@media screen and (max-width: 479px) {
+  .header__logo {
+    svg {
+      --width: 16.2rem;
+    }
+  }
+}
